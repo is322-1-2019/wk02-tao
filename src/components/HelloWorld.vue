@@ -1,35 +1,58 @@
 <template>
 <div class="container">
 
-
-
-
   <h2>Stay focused, be present</h2>
-              
-  <br /> 
-  <br /> 
-  <br /> 
 
+  
 
-  <div class="progress">
-    <div class="progress-bar" style="width:90%">90%</div>
+<div class="card">
+    <div class="card-body">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant1" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant2" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant3" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant4" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant5" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant6" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant7" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant8" width="50" height="50">
+      <img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant9" width="50" height="50">
+    </div>
   </div>
 
 
 
-<br /> 
+<br />
+
+
+<img src="https://sulimanalomran.com/images/young-tree-clipart-6.png" alt="Plant1" width="300" height="300">
+<br />
+
+
+<h2>Countdown 00:00</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:90%">90%</div>
+  </div>
+
+<br />
+
+  <div class="alert alert-success alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
 <br /> 
 
 
 
-
-<br /> 
-<br /> 
   <button type="button" class="btn btn-success">Plant</button>
 
 
 
+
+
+
 </div>
+
 
 </template>
 
@@ -40,40 +63,6 @@ export default {
     msg: String
   }
 }
-
-
-
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -99,11 +88,8 @@ body  {
  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YqGSkmb/abstract-natural-green-organic-motion-background_s_knbmmm__F0007.png");
 }
 
-
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
+img {
+  
 }
 
 
